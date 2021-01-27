@@ -61,7 +61,7 @@ public class LoginPage {
 
 		//Code to locate Log Out link and click
 
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebDriverWait wait = new WebDriverWait(driver, 10); // Explicit Wait
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[text()='Log out']"))).click();
 		
 		
